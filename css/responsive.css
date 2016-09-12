@@ -1,10 +1,4 @@
 @media screen and (min-width: 480px) {
-	#images li {
-		width: 45%;
-		margin: 2.5%;
-		float: left;
-	}
-
 	.menu {
 		margin-top: 0;
 	}
@@ -32,8 +26,8 @@
 	}
 
 	h1 {
-  		font-size: 5em;
-  		margin-top: 12%;
+  		font-size: 6em;
+  		margin-top: 14%;
   		text-shadow: 0 0 8px #37261E;
 	}
 
@@ -45,6 +39,8 @@
 	}
 
 	.menu li:hover .sub{
+		animation-name: animator;
+		animation-duration: 1.5s;
 		display: block;
 	}
 
@@ -61,6 +57,11 @@
 		border-top: solid 2px #FFFFFF;
 	}
 
+	@keyframes animator {
+		from {top: 0; opacity: 0;}
+		to { top: 10em; opacity: 1; }
+	}
+
 	.short-intro {
 		width: 50%;
 		visibility: visible;
@@ -69,7 +70,7 @@
 	}
 
 	section {
-		max-width: 60%;
+		max-width: 100%;
 	}
 
 	header {
@@ -83,6 +84,17 @@
 		margin-top: 1.5em;
 	}
 
+	article:first-child { padding-top: 95vh; }
+
+	#images li {
+		width: 33.333%;
+		float: left;
+	}
+
+	#imagesAbout li {
+		width: 50%;
+		float: left;
+	}
 
 
 }

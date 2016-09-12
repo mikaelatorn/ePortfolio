@@ -20,8 +20,9 @@ header p {
 h1 {
 	color: white;
 	margin: 0;
-	font-size: 2.3em;
+	font-size: 4em;
 	text-align: center;
+	font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 #logo-img {
@@ -46,13 +47,13 @@ a { text-decoration: none; }
 
 body {
 	background-color: #FFFFFF;
-	color: #37261E;
-	font-family: Lato ,'Noto Sans', sans-serif;
+	color: #FFFFFF;
+	font-family: 'Homenaje', sans-serif;
 }
 
 .menu { 
 	list-style-type: none;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Homenaje', sans-serif;
 	margin: 2% 0;
 	padding-left: 0;
 }
@@ -81,32 +82,49 @@ body {
 section {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 0 5% 0 5%;
 }
 
 h2 {
 	text-align: center;
-	border-bottom: solid 1px #ffe6b3;
 	padding-bottom: 7%;
+	padding-top: 7%;
+	margin: 0;
+	font-size: 3em;
+	vertical-align: middle;
 }
 
 h3 {
 	text-align: center;
-	border-top: solid 1px #ffe6b3;
-	border-bottom: solid 1px #ffe6b3;
 	padding-bottom: 7%;
 	padding-top: 7%;
+	margin: 0;
 }
 
 article {
-	border-bottom: solid 1px #ffe6b3;
 	padding-bottom: 7%;
 	width: 100%;
+	background-color: #E86635;
 }
+
+article p{ display: none; }
+article:hover p { 
+	display: block; 
+	animation-name: animators;
+	animation-duration: 0.8s;
+
+}
+
+@keyframes animators {
+	from { top: 0; opacity: 0; }
+	to { top: 5em; opacity: 1; }
+}
+
+article:first-child { background-color: #FCBD56; }
 
 p { 
 	padding-right: 10%;
 	padding-left: 10%;
+	font-size: 1.5em;
 }
 
 img { max-width: 100%; }
@@ -122,7 +140,21 @@ img { max-width: 100%; }
 #images li {
 	width: 100%;
 	height: 90%;
-	margin: 2.5% 0 2.5% 0;
+	margin-bottom: -0.4em;
+}
+
+#imagesAbout li {
+	width: 100%;
+	height: 90%;
+	margin-bottom: -0.4em;
+}
+
+#imagesAbout {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: inherit;
+	height: inherit;
 }
 
 footer {
@@ -130,6 +162,13 @@ footer {
 	right: 0;
 	left: 0;
 	position: relative;
-	padding-top: 4%;
 	text-align: center;
+	background-color: #FAB540;
+}
+footer p { 
+	background-color: #FAB540; 
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
