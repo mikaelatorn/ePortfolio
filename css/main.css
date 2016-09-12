@@ -20,8 +20,9 @@ header p {
 h1 {
 	color: white;
 	margin: 0;
-	font-size: 4em;
+	font-size: 3em;
 	text-align: center;
+	text-shadow: 0 0 8px #37261E;
 	font-family: 'Montserrat Subrayada', sans-serif;
 }
 
@@ -119,7 +120,7 @@ article:hover p {
 	to { top: 5em; opacity: 1; }
 }
 
-article:first-child { background-color: #FCBD56; }
+article:first-child { background-color: #F7A43E; }
 
 p { 
 	padding-right: 10%;
