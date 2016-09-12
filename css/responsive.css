@@ -1,0 +1,88 @@
+@media screen and (min-width: 480px) {
+	#images li {
+		width: 45%;
+		margin: 2.5%;
+		float: left;
+	}
+
+	.menu {
+		margin-top: 0;
+	}
+
+}
+
+@media screen and (min-width: 660px) {
+
+	nav {
+		background: #FCC36A;
+		width: 15%;
+		border: solid 2px #FFFFFF;
+		position: fixed;
+		top: 3.5em;
+		right: 3em;
+	}
+	
+	nav a {
+		font-size: 0.5em;
+	}
+
+	#portfolio {
+   		margin-left: 20%;
+  		width: 45%;
+	}
+
+	h1 {
+  		font-size: 5em;
+  		margin-top: 12%;
+  		text-shadow: 0 0 8px #37261E;
+	}
+
+	.menu li {
+		display: list-item;
+		margin: 0.3em 0 0.3em 0;
+		list-style-type: none;
+		font-size: 1.5em;
+	}
+
+	.menu li:hover .sub{
+		display: block;
+	}
+
+	.menu-text {
+		visibility: visible;
+	}
+
+	.menu li .sub {
+		display: none;
+		margin-top: 0.3em;
+	}
+
+	.sub li {
+		border-top: solid 2px #FFFFFF;
+	}
+
+	.short-intro {
+		width: 50%;
+		visibility: visible;
+		margin: 0 auto;
+		text-shadow: 0 0 8px #37261E;
+	}
+
+	section {
+		max-width: 60%;
+	}
+
+	header {
+		padding: 0.1% 0 0.1% 0;
+		height: 95vh;
+	}
+
+	#logo-img {
+		width:8%;
+		margin-left: 1.5em;
+		margin-top: 1.5em;
+	}
+
+
+
+}
